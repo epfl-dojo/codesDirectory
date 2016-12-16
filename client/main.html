@@ -26,9 +26,9 @@
 </template>
 
 <template name="repoList">
-    <div class="ui list">
+    <ul>
     {{#each repo in repos }}
-        <div class="item"><a href="{{repo.url}}">Project</a></div>
+        <li class="item"><a href="{{repo.url}}">Project</a></li>
     {{/each }}
-    </div>
+    </ul>
 </template>
