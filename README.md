@@ -9,10 +9,6 @@ Share your repo with the EPFL community service
 - Add Repos with tags and type (public/restricted)
 
 ## Technologies
-- nodejs
-- express
-- passport-tequila
-- vuejs
-
+- meteor
 
 
