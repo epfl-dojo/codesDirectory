@@ -7,6 +7,7 @@
 
   {{> hello}}
   {{> info}}
+  {{> repoList}}
 </body>
 
 <template name="hello">
@@ -22,4 +23,12 @@
     <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
     <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
   </ul>
+</template>
+
+<template name="repoList">
+    <div class="ui list">
+    {{#each repo in repos }}
+        <div class="item"><a href="{{repo.url}}">Project</a></div>
+    {{/each }}
+    </div>
 </template>

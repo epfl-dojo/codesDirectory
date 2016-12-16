@@ -13,6 +13,11 @@ Template.hello.helpers({
     return Template.instance().counter.get();
   },
 });
+Template.repoList.helpers({
+  repos() {
+    return RepoLinks.find({});
+  },
+});
 
 Template.hello.events({
   'click button'(event, instance) {
