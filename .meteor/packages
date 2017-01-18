@@ -19,6 +19,9 @@ shell-server@0.2.1            # Server-side component of the `meteor shell` comm
 
 xolvio:core-js                # Polyfills e.g. Array.includes, used in simpl-schema
 
+insecure
+autopublish
+
 static-html@1.1.12_1
 akryum:vue
 akryum:vue-component
