@@ -21,3 +21,4 @@ static-html@1.1.12_1
 akryum:vue
 akryum:vue-component
 session@1.1.7
+jboulhous:dev                 # Remove for production
