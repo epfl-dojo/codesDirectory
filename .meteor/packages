@@ -23,6 +23,7 @@ insecure
 autopublish
 
 static-html@1.1.12_1
+apollo
 akryum:vue
 akryum:vue-component
 session@1.1.7
