@@ -9,6 +9,7 @@
   "dependencies": {
     "babel-runtime": "^6.20.0",
     "meteor-node-stubs": "~0.2.0",
+    "simpl-schema": "^0.1.0",
     "vue": "^2.1.8",
     "vue-meteor-tracker": "^1.0.3",
     "vuex": "^2.1.1"

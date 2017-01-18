@@ -11,20 +11,22 @@ import Directory from '/client/ui/components/Directory'
 
 export default {
   name: 'app',
-  data: {
-      codes: []
-  },
-  meteor: {
-      subscribe: {
-          // This means that we Meteor.subscribe() to "allProjects",
-          // with no parameters.
-          allProjects: []
-      },
-      data: {
-          allProjects: {
-          }
+  data () {
+      return {
+          codes: []
       }
   },
+//  meteor: {
+//      subscribe: {
+//          // This means that we Meteor.subscribe() to "allProjects",
+//          // with no parameters.
+//          allProjects: []
+//      },
+//      data: {
+//          allProjects: {
+//          }
+//      }
+//  },
   mounted () {
     let that = this
 //    axios.get('/api')
