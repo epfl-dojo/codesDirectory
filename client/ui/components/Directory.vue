@@ -14,7 +14,7 @@
     props: ['codes'],
     data () {
       return {
-        filter: ''
+        filter: '',
       }
     },
     components: {
@@ -23,6 +23,13 @@
     computed: {
       filteredCodes () {
         console.log('this.filter is now ' + this.filter)
+        let that = this
+        return this.codes.filter((code) => {
+          return !! _.find(code.tags, (tag) => {
+            return tag.includes(that.filter)
+          })
+        })
+
 //        axios.get('/api').then(function (response) {
 //          console.log(response)
 //          that.codes = response.data.codes

@@ -12,10 +12,22 @@ import Directory from '/client/ui/components/Directory'
 export default {
   name: 'app',
   data () {
+
       return {
-          codes: []
+          codes: require('/model').RepoLinks.find({}).fetch()
       }
   },
+  meteor: {
+    data: {
+      count() {
+        return Session.get('counter');
+      },
+      codes() {
+        return require('/model').RepoLinks.find({}).fetch();
+      }
+    }
+  },
+
 //  meteor: {
 //      subscribe: {
 //          // This means that we Meteor.subscribe() to "allProjects",
