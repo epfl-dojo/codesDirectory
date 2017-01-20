@@ -1,13 +1,14 @@
-# meteor-vue2-example
-Meteor &amp; Vue 2.0 example
+# CodesDirectory
+Share your repo with the EPFL community service
 
-```
-meteor npm install
-meteor
-```
+## Objectifs
+- Create a web application to share your codes that can be useful for the EPFL community developpers
 
-If you create a new app with meteor and vue, don't forget to install vue 2 instead of vue 1:
+## Features
+- Browse shared repositories filtered by tags
+- Add Repos with tags and type (public/restricted)
 
-```
-npm install --save vue@^2.1.8
-```
+## Technologies
+- meteor
+- vue 2.0 (through [Akryum:meteor-vue-component](https://github.com/Akryum/meteor-vue-component))
+
