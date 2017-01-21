@@ -2,7 +2,7 @@ export const RepoLinks = new Mongo.Collection('RepoLinks');
 const SimpleSchema = require('simpl-schema').default;
 
 var Person = String;
-RepoLinks_schema = new SimpleSchema({
+RepoLinks.schema = new SimpleSchema({
     repoUri: {
         type: String,
         label: "URL"
@@ -32,4 +32,4 @@ RepoLinks_schema = new SimpleSchema({
     }
 });
 
-RepoLinks.attachSchema(RepoLinks_schema);
+RepoLinks.attachSchema(RepoLinks.schema);
